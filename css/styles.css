@@ -1,6 +1,5 @@
-html{
-    font-size: 62.5%;
-}
+/*Typography*/
+
 :root{
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
@@ -8,6 +7,9 @@ html{
     --color-heading: #1b0760;
     --color-body:#918ca4;
 } 
+html{
+    font-size: 62.5%;
+}
 body{
     font-family: Inter ,Arial, Helvetica, sans-serif;
     color: var(--color-body);
@@ -44,5 +46,30 @@ p{
     }
     h3{
         font-size: 2.4rem;
+    }
+}
+
+/*link*/
+a{
+    text-decoration: none;
+}
+.left-arrow{
+    text-transform: uppercase;
+    color: var(--color-accent);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.left-arrow::after{
+    content: "-->";
+    margin-left: 5px;
+    transition: margin-left .15s;
+}
+.left-arrow:hover::after{
+    margin-left: 10px;
+}
+
+@media screen and (min-width : 1024px) {
+    .left-arrow{
+        font-size:1.5rem;
     }
 }
