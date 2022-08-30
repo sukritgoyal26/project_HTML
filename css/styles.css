@@ -318,7 +318,7 @@ a {
   }
   
   .plan--popular .card__header::before {
-    content: url(../images/popular.svg);
+    content: url(../ic/popular.svg);
     width: 40px;
     display: inline-block;
     position: absolute;
@@ -343,3 +343,17 @@ a {
       font-size: 1.7rem;
     }
   }
+
+/* MEDIA*/
+.media{
+    display: flex;
+}
+.media__title{
+    margin:0;
+}
+.media__body{
+    margin: 0 2rem;
+}
+.media__image{
+    margin-top: 1rem;
+}
