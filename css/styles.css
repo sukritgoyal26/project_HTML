@@ -717,3 +717,32 @@ a {
         order: 2;
     }
 }
+.showcase__heading{
+    font-size: 3rem;
+    color: white;
+    font-weight: 600;
+}
+.showcase__image{
+    width: 100%;
+}
+.showcase__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.showcase__content{
+    color: var(--color-border);
+    margin-top: 5rem;
+    padding: 2rem 3rem;
+}
+
+.showcase__content .media__title{
+    color: white;
+    font-weight: 300;
+}
+@media screen and (min-width:768px) {
+    .showcase__image{
+        margin-top: 5rem;
+    }
+}
